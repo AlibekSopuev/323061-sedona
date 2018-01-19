@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алибек Сопуев](https://up.htmlacademy.ru/adaptive/13/user/323061).
-* Наставник: `Неизвестно`.
+* Наставник: `Мурат Баркинхоев`.
 
 ---
 
