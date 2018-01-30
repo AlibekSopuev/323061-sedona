@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans'),
-       url('../fonts/ptsans.woff') format('woff'),
-       url('../fonts/ptsans.woff2') format('woff2'),
-       url('../fonts/ptsansbold.woff') format('woff'),
-       url('../fonts/ptsansbold.woff2') format('woff2');
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+        url("../fonts/ptsans.woff") format("woff"),
+        url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff"),
+        url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 
 body {
   background: #f2f2f2;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -27,7 +27,6 @@ body {
   width: 320px;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
-
 
 @import "blocks/logo.scss";
 @import "blocks/welcome.scss";
@@ -45,4 +44,3 @@ body {
 @import "blocks/photo.scss";
 @import "blocks/main-promo.scss";
 @import "blocks/video.scss";
-
