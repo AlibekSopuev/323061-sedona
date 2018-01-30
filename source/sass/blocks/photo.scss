@@ -1,0 +1,58 @@
+// сам контейнер
+.photo {
+  border-top: 1px solid #e5e5e5;
+  padding: 23px 20px 13px;
+  position: relative;
+}
+
+
+// фигуре (изображение +подпись)
+.photo__link {
+  display: block;
+  text-decoration: none;
+}
+
+
+.photo__picture {
+  margin: 0px;
+  overflow: hidden;
+}
+
+// само изображение
+.photo__image {
+  width: 280px;
+  height: 280px;
+  display: block;
+}
+
+.photo-description {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-top: 13px;
+}
+
+
+
+
+.photo__author {
+  display: block;
+  color: #333333;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.photo__likes {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 5px 0px;
+  display: flex;
+}
+
+.photo__like {
+  fill: #b2b2b2;
+  margin-right: 10px;
+}
