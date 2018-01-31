@@ -1,0 +1,32 @@
+.reason {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 40px 6%;
+  background: #eeeeee;
+  min-height: 170px;
+}
+
+.reason--blue {
+  background-color: #81b3d2;
+  color: white;
+}
+
+.reason--icon {
+  background: white;
+  text-align: left;
+  padding-left: 50px;
+  min-height: 0;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.reason__description {
+  padding: 0;
+  margin: 0;
+}

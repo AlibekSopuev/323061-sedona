@@ -1,0 +1,17 @@
+.welcome {
+  background: url("../img/bg-back-mobile@1x.jpg");
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome__image {
+  padding-top: 90px;
+  padding-bottom: 83px;
+  display: block;
+  margin: 0 auto;
+  width: 282px;
+  height: 214px;
+}
