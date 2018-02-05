@@ -1,5 +1,6 @@
 .map {
-  background: url("../img/bg-map-mobile@1x.jpg") no-repeat left top;
-  width: 450px;
-  height: 370px;
+  background: $blue url("../img/bg-map-mobile@1x.jpg") center center no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
 }

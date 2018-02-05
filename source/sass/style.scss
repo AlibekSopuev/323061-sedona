@@ -7,6 +7,7 @@
         url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
+@import "variables.scss";
 
 body {
   background: #f2f2f2;
@@ -19,6 +20,12 @@ body {
   color: #333333;
   text-transform: uppercase;
   min-width: 320px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .wrapper {
@@ -26,12 +33,26 @@ body {
   margin: 0 auto;
   width: 320px;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
+  @media ($tablet-width) {
+    width: 100%;
+  }
+
+  @media ($desktop-width) {
+    width: 1200px;
+  }
 }
 
+@import "mixins.scss";
+
+@import "blocks/header.scss";
 @import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/welcome-index.scss";
 @import "blocks/welcome.scss";
 @import "blocks/reasons.scss";
 @import "blocks/reason.scss";
+@import "blocks/reason-picture.scss";
+@import "blocks/icon-reasons.scss";
 @import "blocks/interest.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";

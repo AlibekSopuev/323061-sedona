@@ -1,22 +1,36 @@
+.photos {
+  @media ($tablet-width) {
+    padding: 0 8%;
+  }
+  @media ($desktop-width) {
+    padding: 0;
+  }
+}
+
 .photos__header {
-  text-align: center;
-  padding: 25px 0 20px;
+  @include after-intro__header;
+  padding: 25px 0px 20px;
 }
 
 .photos__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: black;
-  padding: 0 7%;
+  @include after-intro__title;
 }
 
 .photos__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #333333;
-  padding-top: 5px;
-  padding-left: 7%;
-  padding-right: 7%;
+  @include after-intro__description;
+  &--shift {
+    display: inline;
+    @media ($tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.photos__container {
+
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
 }

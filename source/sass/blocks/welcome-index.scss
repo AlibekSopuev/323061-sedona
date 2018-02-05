@@ -1,12 +1,10 @@
-.welcome {
+.welcome-index {
+  background: url("../img/bg-back-mobile@1x.jpg");
   position: relative;
   width: 100%;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: $blue;
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   &:after {
     content: "";
     display: block;
@@ -23,26 +21,22 @@
   }
 }
 
-.welcome__image {
-  padding-top: 52px;
-  padding-bottom: 69px;
+.welcome-index__image {
+  padding-top: 90px;
+  padding-bottom: 83px;
   display: block;
   margin: 0 auto;
-  width: 229px;
-  height: 39px;
-
+  width: 282px;
+  height: 214px;
   @media ($tablet-width) {
-    width: 458px;
-    height: 78px;
-    padding-top: 95px;
-    padding-bottom: 115px;
+    width: 460px;
+    height: 350px;
+    padding-top: 80px;
+    padding-bottom: 87px;
   }
 
   @media ($desktop-width) {
-    width: 461px;
-    height: 80px;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 78px;
+    padding-bottom: 92px;
   }
-
 }

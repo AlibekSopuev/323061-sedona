@@ -4,39 +4,37 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <div class="wrapper">
-      <header class="page-header">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img src="img/logo-sedona-mobile.svg" alt="" class="page-header__logo-image">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="https://htmlacademy.ru/">HTML academy</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Форма отзыва</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фото и видео</a>
-              </li>
-              <li class="site-list__item">
-                <a href="">Главная</a>
-              </li>
-            </ul>
-          </div>
+      <header class="header">
+        <button class="hamburger" type="button">
+        </button>
+        <nav class="menu menu--opened">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active"><a class="menu__link menu__link--active">Главная</a></li>
+            <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item"><a href="form.html" class="menu__link">Форма отзыва</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__link">Html Academy</a></li>
+          </ul>
         </nav>
+        <div class="header__wrapper">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              </picture>
+            </a>
+          </div>
+        </div>
       </header>
 
-      <section class="welcome">
-        <img src="img/text-sedona-index.svg" alt="Welcome to the Sedona" class="welcome__image">
+      <section class="welcome-index">
+        <img src="img/text-sedona-index.svg" alt="Welcome to the Sedona" class="welcome-index__image">
       </section>
 
       <main class="page-main">
@@ -50,32 +48,32 @@
           </header>
 
           <div class="reasons__row">
-            <section class="reason reason--blue">
+            <section class="reason reason--blue reason--first">
               <h2 class="reason__title">Настоящий городок</h2>
               <p class="reason__number">— №1 —</p>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </section>
 
             <div class="reason-picture">
-              <a href="#"><img src="img/main-city-mobile@1x.jpg" alt="" class="reason-picture__photo"></a>
+              <a href="#"><img src="img/main-city-mobile@1x.jpg" class="reason-picture__photo" width="320" srcset="img/photo-city@2x.jpg 2x"></a>
             </div>
           </div>
-          <section class="reasons__row">
+          <section class="icon-reasons">
             <div class="reason reason--icon reason--icon-home">
-              <h3 class="reason__title">Жилье</h3>
-              <p class="reason__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h3 class="reason--icon__title">Жилье</h3>
+              <p class="reason--icon__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="reason reason--icon reason--icon-souvenirs">
+              <h3 class="reason--icon__title">Сувениры</h3>
+              <p class="reason--icon__description">Не только китайского, но и местного производства!</p>
             </div>
             <div class="reason reason--icon reason--icon-food">
-              <h3 class="reason__title">Сувениры</h3>
-              <p class="reason__description">Не только китайского, но и местного производства!</p>
-            </div>
-            <div class="reason reason--icon reason--icon-gift">
-              <h3 class="reason__title">Еда</h3>
-              <p class="reason__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <h3 class="reason--icon__title">Еда</h3>
+              <p class="reason--icon__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
           </section>
-          <div class="reasons__row reasons__row--invert">
-            <section class="reason reason--blue">
+          <div class="reasons__row reason--picture">
+            <section class="reason reason--blue reason--blue-right">
               <h2 class="reason__title">Там есть Мост дьявола</h2>
               <p class="reason__number">— №2 —</p>
               <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -107,7 +105,7 @@
         <section class="interest">
             <h2 class="interest__title">Заинтересовались?</h2>
             <p class="interest__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a href="#" class="interest__find button">Найти гостиницу</a>
+            <a href="#" class="btn btn--find">Найти гостиницу</a>
         </section>
         <div class="map">
         </div>
