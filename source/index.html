@@ -55,7 +55,13 @@
             </section>
 
             <div class="reason-picture">
-              <a href="#"><img src="img/main-city-mobile@1x.jpg" class="reason-picture__photo" width="320" srcset="img/photo-city@2x.jpg 2x"></a>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x">
+                  <img src="img/main-city-mobile@1x.jpg" class="reason-picture__photo" srcset="img/photo-city@2x.jpg 2x">
+                </picture>
+              </a>
             </div>
           </div>
           <section class="icon-reasons">
@@ -74,13 +80,19 @@
           </section>
           <div class="reasons__row reason--picture">
             <section class="reason reason--blue reason--blue-right">
-              <h2 class="reason__title">Там есть Мост дьявола</h2>
-              <p class="reason__number">— №2 —</p>
-              <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <b class="reason__title">Там есть <span class="reason__title--shift">Мост дьявола</span></b>
+              <div class="reason__number">— №2 —</div>
+              <p class="reason__description">Да, по нему можно пройти! Если вы <span class="reason__description--shift">осмелитесь, конечно</span></p>
             </section>
 
             <div class="reason-picture">
-              <a href="#"><img src="img/main-bridge-mobile@1x.jpg" alt="" class="reason-picture__photo"></a>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x">
+                  <img src="img/main-bridge-mobile@1x.jpg" alt="" class="reason-picture__photo">
+                </picture>
+              </a>
             </div>
           </div>
 
