@@ -1,22 +1,37 @@
 .interest {
-  text-align: center;
-  padding: 25px 0;
+  @include after-intro__header;
+  &__title {
+    @include after-intro__title;
+    font-size: 21px;
+    margin: 0;
+  }
+  &__description {
+    @include after-intro__description;
+    margin-bottom: 30px;
+  }
 }
 
 .interest__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: black;
-  padding: 0 7%;
+  @media ($desktop-width) {
+    padding-top: 0;
+  }
 }
 
-.interest__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #333333;
-  padding-top: 5px;
-  padding-left: 7%;
-  padding-right: 7%;
+.btn {
+  @include btn;
+}
+
+.btn--find {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  width: 280px;
+  @media ($tablet-width) {
+    margin-bottom: 20px;
+    width: 458px;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 27px;
+  }
 }

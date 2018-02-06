@@ -1,22 +1,30 @@
+.reasons {
+  font-size: 0;
+  position: relative;
+}
+
 .reasons__header {
-  text-align: center;
-  padding: 25px 0;
+  @include after-intro__header;
+  padding-top: 29px;
+  padding-bottom: 0;
+  @media ($tablet-width) {
+    font-size: 21px;
+    padding: 38px 15% 20px;
+  }
+  @media ($desktop-width) {
+    padding: 5px 20% 20px;
+  }
 }
 
 .reasons__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: black;
-  padding: 0 7%;
+  @include after-intro__title;
+  @media ($tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .reasons__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #333333;
-  padding-top: 5px;
-  padding-left: 7%;
-  padding-right: 7%;
+  @include after-intro__description;
+  padding-top: 15px;
+  padding-bottom: 0;
 }
