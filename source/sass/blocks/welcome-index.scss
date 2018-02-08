@@ -5,6 +5,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media ($desktop-width) {
+    background-image: url("../img/bg-back-desktop.jpg");
+  }
+
   &:after {
     content: "";
     display: block;
@@ -18,6 +23,19 @@
     background-repeat: no-repeat;
     background-size: 322px 27px;
     background-position-x: -1px;
+
+    @media ($tablet-width) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: 100% 57px;
+      height: 57px;
+      bottom: 0;
+      background-position-x: 0.1px;
+    }
+    @media ($desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: 1201px 57px;
+      background-position-x: -1px;
+    }
   }
 }
 

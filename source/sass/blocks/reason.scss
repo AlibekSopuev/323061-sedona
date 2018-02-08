@@ -53,12 +53,9 @@
 }
 
 .reason__description--shift {
-  display: none;
-  @media ($tablet-width) {
-    display: inline;
-  }
-  @media ("min-width: 970px") {
-    display: none;
+  display: inline;
+  @media ($desktop-width) {
+    display: block;
   }
 }
 
@@ -66,7 +63,7 @@
   background: white;
   text-align: left;
   padding: 0;
-  padding-left: 50px;
+  padding-left: 45px;
   min-height: 0;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -93,6 +90,15 @@
   }
   @media ($desktop-width) {
     padding: 160px 5.5% 75px;
+  }
+}
+.reason--icon__description--shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
+  }
+  @media ($desktop-width) {
+    display: inline;
   }
 }
 
