@@ -1,3 +1,5 @@
+@import "normalize.scss";
+
 @font-face {
   font-family: "PT Sans";
   src: local("PT Sans"),
@@ -56,6 +58,8 @@ body {
 @import "blocks/interest.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social-btns.scss";
+@import "blocks/social-btn.scss";
 @import "blocks/hashtag.scss";
 @import "blocks/copyright.scss";
 @import "blocks/form.scss";

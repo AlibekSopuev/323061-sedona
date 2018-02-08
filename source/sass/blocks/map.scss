@@ -3,4 +3,10 @@
   background-size: cover;
   height: 350px;
   width: 100%;
+  @media ($tablet-width) {
+    background: $blue url("../img/bg-map-tablet.jpg") center center no-repeat;
+  }
+  @media ($desktop-width) {
+    background: $blue url("../img/bg-map-desktop.jpg") center center no-repeat;
+  }
 }
