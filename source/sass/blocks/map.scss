@@ -6,26 +6,26 @@
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-     .map {
-      background-image: url("../img/bg-map-mobile@2x.jpg");
-    }
+      .map {
+        background-image: url("../img/bg-map-mobile@2x.jpg");
+      }
   }
   @media ($tablet-width) {
     background: $blue url("../img/bg-map-tablet.jpg") center center no-repeat;
-     @media
+      @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-       .map {
-        background-image: url("../img/bg-map-tablet@2x.jpg");
-      }
+          .map {
+          background-image: url("../img/bg-map-tablet@2x.jpg");
+        }
     }
   }
   @media ($desktop-width) {
     background: $blue url("../img/bg-map-desktop.jpg") center center no-repeat;
-     @media
+      @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-       .map {
+        .map {
         background-image: url("../img/bg-map-desktop@2x.jpg");
       }
     }
