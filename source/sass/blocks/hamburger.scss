@@ -1,7 +1,7 @@
 .hamburger {
     right: 0;
     top: 0;
-    padding: 15px;
+    padding: 15px 20px 15px;
     cursor: pointer;
     text-transform: none;
     background-color: transparent;
@@ -18,19 +18,14 @@
 }
 
 .hamburger-box {
-    vertical-align: middle;
-    width: 20px;
-    height: 17px;
-    position: relative;
-    display: inline-block;
-}
-
-.hamburger-inner {
-    margin-top: -1.5px;
-}
-
-.hamburger-inner::after {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  &::after {
     content: url("../img/icon-cross.svg");
+  }
 }
 
 .hamburger:hover {

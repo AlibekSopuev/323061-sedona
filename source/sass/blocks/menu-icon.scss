@@ -1,0 +1,29 @@
+.menu-icon {
+  right: 0;
+  top: 0;
+  padding: 17px 20px 17px;
+  cursor: pointer;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  z-index: 9997;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+
+.menu-icon__box {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: url("../img/icon-menu.svg");
+  }
+}
