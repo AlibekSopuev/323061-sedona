@@ -23,3 +23,14 @@
     min-width: 480px;
   }
 }
+
+.form-submit__help {
+  display: none;
+  @media ($tablet-width) {
+    display: block;;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 26px;
+  }
+}
