@@ -15,12 +15,8 @@
   }
 }
 
-.popup__success {
-  display: block;
-}
-
 .popup__fail {
-  display: block;
+  display: none;
   @media ($tablet-width) {
     width: 400px;
     height: 347px;
