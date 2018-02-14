@@ -14,9 +14,7 @@
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      .video {
-        background-image: url("../img/video-mobile@2x.jpg");
-      }
+      background-image: url("../img/video-mobile@2x.jpg");
   }
 
   @media ($tablet-width) {
@@ -27,9 +25,7 @@
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        .video {
         background-image: url("../img/video-tablet@2x.jpg");
-      }
     }
   }
 
@@ -41,9 +37,7 @@
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        .video {
         background-image: url("../img/video-desktop@2x.jpg");
-      }
     }
   }
 }

@@ -6,28 +6,24 @@
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      .map {
-        background-image: url("../img/bg-map-mobile@2x.jpg");
-      }
+      background-image: url("../img/bg-map-mobile@2x.jpg");
   }
   @media ($tablet-width) {
     background: $blue url("../img/bg-map-tablet@1x.jpg") center center no-repeat;
-      @media
+    background-size: 100% 350px;
+    @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-          .map {
-          background-image: url("../img/bg-map-tablet@2x.jpg");
-        }
+        background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
   @media ($desktop-width) {
     background: $blue url("../img/bg-map-desktop@1x.jpg") center center no-repeat;
-      @media
+    background-size: 100% 350px;
+    @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        .map {
         background-image: url("../img/bg-map-desktop@2x.jpg");
-      }
     }
   }
 }
