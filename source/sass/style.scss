@@ -35,6 +35,8 @@ body {
   margin: 0 auto;
   width: 320px;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
+  display: flex;
+  flex-direction: column;
   @media ($tablet-width) {
     width: 768px;
   }
@@ -47,6 +49,8 @@ body {
 @import "mixins.scss";
 
 @import "blocks/header.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/menu-icon.scss";
 @import "blocks/logo.scss";
 @import "blocks/menu.scss";
 @import "blocks/welcome-index.scss";
@@ -65,6 +69,7 @@ body {
 @import "blocks/form.scss";
 @import "blocks/form-sections.scss";
 @import "blocks/form-submit.scss";
+@import "blocks/popup.scss";
 @import "blocks/photos.scss";
 @import "blocks/photo.scss";
 @import "blocks/main-promo.scss";

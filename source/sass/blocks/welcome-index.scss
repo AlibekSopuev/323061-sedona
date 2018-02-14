@@ -5,9 +5,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media ($tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 
   @media ($desktop-width) {
-    background-image: url("../img/bg-back-desktop.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   &:after {
@@ -33,7 +54,7 @@
     }
     @media ($desktop-width) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
-      background-size: 1201px 57px;
+      background-size: 1202px 57px;
       background-position-x: -1px;
     }
   }
