@@ -306,11 +306,10 @@ input[type="text"]:focus:hover {
     }
   }
   @media ($desktop-width) {
-    width: 25%;
+    width: auto;
     padding-left: 0;
   }
 }
-
 
 .form__line--impression label,
 .form__line--atraction label {
