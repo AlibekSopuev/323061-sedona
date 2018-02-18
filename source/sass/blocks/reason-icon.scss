@@ -1,0 +1,75 @@
+.reason-icon {
+  background: white;
+  text-align: left;
+  padding: 0;
+  padding-left: 45px;
+  min-height: 0;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: normal;;
+    line-height: 21px;
+    color: #333333;
+  }
+  @media ($tablet-width) {
+    text-align: center;
+    padding: 50px 5.5%;
+    padding-top: 160px;
+    &__title {
+      font-size: 21px;
+    }
+  }
+  @media ($desktop-width) {
+    padding: 160px 5.5% 75px;
+  }
+}
+.reason-icon__description--shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
+  }
+  @media ($desktop-width) {
+    display: inline;
+  }
+}
+
+.reason-icon:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  left: 0;
+  top: 0;
+  @media ($tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 66px;
+    width: 70px;
+  }
+}
+
+.reason-icon--home:before {
+  content: url("../img/icon-house.svg");
+}
+
+.reason-icon--souvenirs {
+  order: 1;
+}
+
+.reason-icon--souvenirs:before {
+  content: url("../img/icon-gift.svg");
+  @media ($tablet-width) {
+    top: 56px;
+  }
+}
+
+.reason-icon--food:before {
+  content: url("../img/icon-burger.svg");
+}

@@ -13,7 +13,7 @@
   }
 }
 
-.social-btn--icon {
+.social-btn__icon {
   fill: white;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
@@ -26,7 +26,7 @@
 }
 
 .social-btn:active,
-.social-btn--icon:active {
+.social-btn__icon:active {
   background: $blue-active;
   fill: $white30;
 }

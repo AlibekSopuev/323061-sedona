@@ -5,15 +5,14 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
     <div class="wrapper">
       <header class="header">
         <button class="hamburger" type="button">
-          <span class="hamburger__box">
-          </span>
+          <span class="hamburger__box"></span>
         </button>
         <nav class="menu menu--opened">
           <ul class="menu__list">
@@ -52,7 +51,7 @@
         </header>
 
         <div class="reason reason--blue reason--first">
-          <b class="reason__title">Настоящий <span class="reason__title--shift">городок</span></b>
+          <b class="reason__title">Настоящий <span class="reason__title-shift">городок</span></b>
           <div class="reason__number">— №1 —</div>
           <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -61,52 +60,52 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-            <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" class="reason-picture__photo">
+            <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="reason-picture" class="reason-picture__photo">
           </picture>
         </div>
 
         <div class="icon-reasons">
-          <div class="reason reason--icon reason--icon-home">
-            <b class="reason--icon__title">Жилье</b>
-            <p class="reason--icon__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <div class="reason reason-icon reason-icon--home">
+            <b class="reason-icon__title">Жилье</b>
+            <p class="reason-icon__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="reason reason--icon reason--icon-souvenirs">
-            <b class="reason--icon__title">Сувениры</b>
-            <p class="reason--icon__description">Не только китайского, но и местного производства!</p>
+          <div class="reason reason-icon reason-icon--souvenirs">
+            <b class="reason-icon__title">Сувениры</b>
+            <p class="reason-icon__description">Не только китайского, но и местного производства!</p>
           </div>
-          <div class="reason reason--icon reason--icon-food">
-            <b class="reason--icon__title">Еда</b>
-            <p class="reason--icon__description">Всегда заказывайте <span class="reason--icon__description--shift">фирменный бургер,</span> Вы не разочаруетесь!</p>
+          <div class="reason reason-icon reason-icon--food">
+            <b class="reason-icon__title">Еда</b>
+            <p class="reason-icon__description">Всегда заказывайте <span class="reason-icon__description-shift">фирменный бургер,</span> Вы не разочаруетесь!</p>
           </div>
         </div>
-        <div class="reason--picture">
+        <div class="reason-flex">
           <div class="reason reason--blue reason--blue-right">
-            <b class="reason__title">Там есть <span class="reason__title--shift">Мост дьявола</span></b>
+            <b class="reason__title">Там есть <span class="reason__title-shift">Мост дьявола</span></b>
             <div class="reason__number">— №2 —</div>
-            <p class="reason__description">Да, по нему можно пройти! <span class="reason__description--shift">Если вы осмелитесь, конечно</span></p>
+            <p class="reason__description">Да, по нему можно пройти! <span class="reason__description-shift">Если вы осмелитесь, конечно</span></p>
           </div>
 
           <div class="reason-picture">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="" class="reason-picture__photo">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="reason-picture" class="reason-picture__photo">
             </picture>
           </div>
         </div>
 
         <div class="reason reason--gray reason--gray-first">
-          <b class="reason__title">Небольшая <span class="reason__title--shift">площадь</span></b>
+          <b class="reason__title">Небольшая <span class="reason__title-shift">площадь</span></b>
           <div class="reason__number">— №3 —</div>
           <p class="reason__description">Все интересные места находятся очень близко</p>
         </div>
         <div class="reason reason--gray">
-          <b class="reason__title">Красивая <span class="reason__title--shift">дорога</span></b>
+          <b class="reason__title">Красивая <span class="reason__title reason__title-shift">дорога</span></b>
           <div class="reason__number">— №4 —</div>
           <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reason reason--gray">
-          <b class="reason__title">Мало <span class="reason__title--shift">туристов</span></b>
+          <b class="reason__title">Мало <span class="reason__title-shift">туристов</span></b>
           <div class="reason__number">— №5 —</div>
           <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
         </div>
@@ -114,7 +113,7 @@
 
       <div class="interest">
           <h2 class="interest__title">Заинтересовались?</h2>
-          <p class="interest__description">Укажите предполагаемые даты поездки, <span class="interest__description--shift">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          <p class="interest__description">Укажите предполагаемые даты поездки, <span class="interest__description-shift">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
           <a href="#" class="btn btn--find">Найти гостиницу</a>
       </div>
       <div class="map">
@@ -124,22 +123,22 @@
         <div class="hashtag">#visitsedona</div>
         <div class="social-btns">
           <a href="#" class="social-btn">
-            <svg class="social-btn--icon" xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 17.5 14.663"><path clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/></svg>
+            <svg class="social-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 17.5 14.663"><path clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/></svg>
             Twitter
           </a>
           <a href="#" class="social-btn">
-            <svg class="social-btn--icon" xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 8.672 18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/></svg>
+            <svg class="social-btn__icon" xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 8.672 18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/></svg>
             Facebook
           </a>
           <a href="#" class="social-btn">
-            <svg class="social-btn--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 19.979 14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
+            <svg class="social-btn__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 19.979 14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
             youtube
           </a>
         </div>
         <p class="copyright">
-          <span class="copyright--done">Разработано</span>
-          <a href="https://htmlacademy.ru/" class="copyright__link">
-            <svg class="copyright--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40px" height="53px"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/></svg>
+          <span class="copyright__done">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40px" height="53px"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/></svg>
             htmlacademy.ru
           </a>
         </p>

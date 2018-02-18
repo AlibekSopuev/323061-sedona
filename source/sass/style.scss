@@ -3,10 +3,17 @@
 @font-face {
   font-family: "PT Sans";
   src: local("PT Sans"),
-        url("../fonts/ptsans.woff") format("woff"),
-        url("../fonts/ptsans.woff2") format("woff2"),
-        url("../fonts/ptsansbold.woff") format("woff"),
-        url("../fonts/ptsansbold.woff2") format("woff2");
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+  url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
 }
 
 @import "variables.scss";
@@ -59,6 +66,8 @@ body {
 @import "blocks/reason.scss";
 @import "blocks/reason-picture.scss";
 @import "blocks/icon-reasons.scss";
+@import "blocks/reason-icon.scss";
+@import "blocks/reason-flex.scss";
 @import "blocks/interest.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";

@@ -25,7 +25,7 @@
 .form__description {
   @include after-intro__description;
   padding-top: 10px;
-  &--shift {
+  &-shift {
     display: inline;
     @media ($tablet-width) {
       display: block;
@@ -59,15 +59,18 @@
     min-width: 258px;
     font-size: 21px;
     margin-bottom: 45px;
-    &--hide {
-      display: none;
-    }
   }
   @media ($desktop-width) {
     width: 400px;
-    &--hide {
-      display: inline;
-    }
+  }
+}
+
+.form__legend-hide {
+  @media ($tablet-width) {
+    display: none;
+  }
+  @media ($desktop-width) {
+    display: inline;
   }
 }
 
@@ -141,7 +144,7 @@
   }
 }
 
-.form__line--hide {
+.form__line-hide {
   @media ($desktop-width) {
     display: none;
   }
