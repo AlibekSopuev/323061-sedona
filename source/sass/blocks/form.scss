@@ -150,7 +150,9 @@
   }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
   border: 4px solid #f2f2f2;
   outline: none;
   background: #f2f2f2;
@@ -182,7 +184,8 @@ input.form__meet--long[type="text"] {
   }
 }
 
-input.form__contact[type="text"] {
+input.form__contact[type="tel"],
+input.form__contact[type="email"] {
   width: 252px;
   @media ($tablet-width) {
     width: 100%;
